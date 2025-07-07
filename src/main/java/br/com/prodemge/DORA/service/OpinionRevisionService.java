@@ -6,6 +6,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.prodemge.DORA.model.OpinionRevision;
+import br.com.prodemge.DORA.repository.OpinionRevisionRepository;
+
 @Service
 public class OpinionRevisionService {
     @Autowired

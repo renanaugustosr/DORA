@@ -6,6 +6,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.prodemge.DORA.model.Feedback;
+import br.com.prodemge.DORA.repository.FeedbackRepository;
+
 @Service
 public class FeedbackService {
     @Autowired

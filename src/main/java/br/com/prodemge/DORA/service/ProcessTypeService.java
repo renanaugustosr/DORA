@@ -6,6 +6,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.prodemge.DORA.model.ProcessType;
+import br.com.prodemge.DORA.repository.ProcessTypeRepository;
+
 @Service
 public class ProcessTypeService {
     @Autowired
