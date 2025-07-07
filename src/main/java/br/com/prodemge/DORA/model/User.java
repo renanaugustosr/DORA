@@ -1,4 +1,4 @@
-﻿package br.com.prodemge.DORA.model;
+package br.com.prodemge.DORA.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
