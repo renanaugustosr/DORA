@@ -29,8 +29,8 @@ public class DocumentService {
     public Document update(Long id, Document document) {
         return documentRepository.findById(id)
                 .map(existing -> {
-                    existing.setTitle(document.getTitle());
-                    existing.setContent(document.getContent());
+                    existing.setFileName(document.getFileName());
+                    existing.setStoragePath(document.getStoragePath());
                     return documentRepository.save(existing);
                 })
                 .orElse(null);
