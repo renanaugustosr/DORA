@@ -1,10 +1,14 @@
 package br.com.prodemge.DORA.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import br.com.prodemge.DORA.model.User;
+import br.com.prodemge.DORA.repository.UserRepository;
 
 @Service
 public class UserService {
@@ -34,5 +38,9 @@ public class UserService {
 
     public void delete(Long id) {
         repository.deleteById(id);
+    }
+
+    public boolean authenticate(String email, String password) {
+        return repository.findByEmailAndPassword(email, password).isPresent();
     }
 }
