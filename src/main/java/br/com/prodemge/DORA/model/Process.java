@@ -12,20 +12,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "documents")
+@Table(name = "processes")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Document {
+public class Process {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    private String process_id;
-    private String uploaded_by;
-    private String file_name;
-
-    private String mime_type;
-    private String storage_path;
-    private String file_size;
+    private String number;
+    private String type_id;
+    private String status_id;
+    private String created_by;
+    private String created_at;
+    private String updated_at;
 }

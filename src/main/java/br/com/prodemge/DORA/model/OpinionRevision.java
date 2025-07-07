@@ -12,20 +12,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "documents")
+@Table(name = "opinion_revisions")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Document {
+public class OpinionRevision {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    private String process_id;
-    private String uploaded_by;
-    private String file_name;
-
-    private String mime_type;
-    private String storage_path;
-    private String file_size;
+    private String opinion_id;
+    private String edited_by;
+    private String content;
+    private String created_at;
 }
